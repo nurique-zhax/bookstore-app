@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: bookstore-app
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bookstore
+    username: postgres
+    password: postgres
+  jpa:
+    properties.hibernate:
+      ddl-auto: none
+  sql:
+    init:
+      mode: always
+      schema-locations: db/changelog/db.changelog-1.0.sql
+      data-locations: db/changelog/db.changelog-2.0.sql
