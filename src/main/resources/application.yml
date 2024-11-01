@@ -6,10 +6,10 @@ spring:
     username: postgres
     password: postgres
   jpa:
-    hibernate:
+    properties.hibernate:
       ddl-auto: none
   sql:
     init:
       mode: always
-      schema-locations: schema.sql
-      data-locations: data.sql
+      schema-locations: db/changelog/db.changelog-1.0.sql
+      data-locations: db/changelog/db.changelog-2.0.sql
